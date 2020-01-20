@@ -1,0 +1,33 @@
+{
+    "manifestVersion": 1,
+    "id": "HelloBuildTask",
+    "version": "1.0.0",
+    "name": "Window Service - Start and Stop",
+    "description": "A VSTS Build Task that start and stop window service",
+    "publisher": "nomansadiq",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "icon.png"
+    },
+    "contributions": [
+        {
+            "id": "HelloBuildTask",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildtask"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "buildtask"
+        }
+    ]
+}
