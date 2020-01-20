@@ -1,0 +1,59 @@
+{
+    "id": "5164728d-cfca-4576-a066-bde89930bf2b",
+    "name": "WSM",
+    "friendlyName": "Window Service - Start and Stop",
+    "description": "This task will start and stop window service",
+    "helpMarkDown": "",
+    "category": "Build",
+    "visibility": [
+        "Build"
+    ],
+    "runsOn": [
+        "Agent",
+        "DeploymentGroup"
+    ],
+    "author": "Noman Sadiq",
+    "version": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0
+    },
+    "instanceNameFormat": "Window Service - Start and Stop",
+    "groups": [
+        {
+            "name": "advanced",
+            "displayName": "Advanced",
+            "isExpanded": false
+        }
+    ],
+    "inputs": [
+        {
+            "name": "ServiceName",
+            "type": "string",
+            "label": "Service Name",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Enter your service name like 'Service Name' "
+        },
+        {
+            "name": "ServiceStatus",
+            "type": "pickList",
+            "label": "Select Service to ",
+            "defaultValue": "Start",
+            "required": true,
+            "helpMarkDown": "Select Service to Start and Stop",
+            "properties": {
+              "EditableOptions": "True"
+            }
+        }
+    ],
+    "execution": {
+        "PowerShell3": {
+            "target": "powershell.ps1",
+            "platforms": [
+                "windows"
+            ],
+            "workingDirectory": "$(currentDirectory)"
+        }
+    }
+}

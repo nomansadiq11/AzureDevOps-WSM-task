@@ -8,9 +8,9 @@ try {
     
     # Get inputs. 
     $ServiceName = Get-VstsInput -Name 'ServiceName' -Require 
-    $StartorSttop = Get-VstsInput -Name 'StartorSttop' -Require 
+    $StartorSttop = Get-VstsInput -Name 'ServiceStatus' -Require 
 
-    Get-Service "SQL Server (NS2014)" | Where {$_.status –eq 'Running'} |  Stop-Service
+    Get-Service $ServiceName | Where {$_.status –eq 'Running'} |  Stop-Service
 
 
     # Get-Service "SQL Server (NS2014)" | Where {$_.status –eq 'Stopped'} |  Start-Service
@@ -20,7 +20,10 @@ try {
      
 
 } finally { 
+    
+    
     Trace-VstsLeavingInvocation $MyInvocation 
+
 }
 
 

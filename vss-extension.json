@@ -1,10 +1,10 @@
 {
     "manifestVersion": 1,
-    "id": "HelloBuildTask",
+    "id": "WindowServiceStartStop",
     "version": "1.0.0",
     "name": "Window Service - Start and Stop",
     "description": "A VSTS Build Task that start and stop window service",
-    "publisher": "nomansadiq",
+    "publisher": "nsadiq",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
@@ -13,9 +13,12 @@
     "icons": {
         "default": "icon.jpg"
     },
+    "categories": [
+        "Azure Pipelines"
+    ],
     "contributions": [
         {
-            "id": "HelloBuildTask",
+            "id": "WindowServiceStartStop",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
@@ -27,7 +30,7 @@
     ],
     "files": [
         {
-            "path": "buildtask"
+            "path": "buildtasks"
         }
     ]
 }
