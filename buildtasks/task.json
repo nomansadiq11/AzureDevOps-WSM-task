@@ -14,9 +14,9 @@
     ],
     "author": "Noman Sadiq",
     "version": {
-        "Major": 0,
+        "Major": 1,
         "Minor": 0,
-        "Patch": 0
+        "Patch": 1
     },
     "instanceNameFormat": "Window Service - Start and Stop",
     "groups": [
@@ -44,6 +44,11 @@
             "helpMarkDown": "Select Service to Start and Stop",
             "properties": {
               "EditableOptions": "True"
+            },
+            "options": {
+                "Start": "Start",
+                "Stop": "Stop"
+                
             }
         }
     ],

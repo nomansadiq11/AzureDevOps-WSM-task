@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "WindowServiceStartStop",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "name": "Window Service - Start and Stop",
     "description": "A VSTS Build Task that start and stop window service",
     "publisher": "nsadiq",
