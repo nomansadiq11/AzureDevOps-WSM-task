@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "WindowServiceStartStop",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "name": "Window Service - Start and Stop",
     "description": "A VSTS Build Task that start and stop window service",
     "publisher": "nsadiq",
@@ -24,7 +24,7 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "buildtask"
+                "name": "buildtasks"
             }
         }
     ],
