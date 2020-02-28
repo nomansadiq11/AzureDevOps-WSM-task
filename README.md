@@ -7,6 +7,8 @@ This repo created for to create window service start and stop managment using Az
 - Start Window Service
 - Stop Window Service
 
+These features can be use to deploy your window services using CI/CD pipelines for your applications. 
+
 ### Notes:-
 
 - This will use only windows Build Agent 
